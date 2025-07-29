@@ -1,0 +1,156 @@
+/* Estilos base */
+.about-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #2c3e50;
+}
+
+.section-title span {
+  color: #3498db;
+}
+
+/* Layout del contenido */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Columna de imagen */
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 5px solid #fff;
+}
+
+/* Columna de información */
+.about-info h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.bio-text {
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #34495e;
+}
+
+/* Lista de habilidades */
+.skills-container h4,
+.education-container h4 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin: 25px 0 15px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #3498db;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: default;
+}
+
+/* Lista de educación */
+.education-list {
+  list-style: none;
+  padding: 0;
+}
+
+.education-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education-icon {
+  font-size: 1.2rem;
+}
+
+/* Botón de descarga */
+.download-btn {
+  display: inline-block;
+  background: #2c3e50;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.download-btn:hover {
+  background: #3498db;
+}
+
+/* Diseño Responsive */
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .profile-img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .about-info h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-list li {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .download-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
